@@ -1,0 +1,35 @@
+{
+  "name": "lumen-cms-utils",
+  "version": "1.0.0",
+  "description": "Utility library for Lumen CMS projects",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "build-ts": "tsdx build --tsconfig ./tsconfig.build.json --target node",
+    "prepublishOnly": "npm run build-ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "prettier": {
+    "printWidth": 80,
+    "semi": false,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lumen-cms/lumen-cms-utils.git"
+  },
+  "author": "Dominic Garms",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lumen-cms/lumen-cms-utils/issues"
+  },
+  "homepage": "https://github.com/lumen-cms/lumen-cms-utils#readme",
+  "dependencies": {
+    "storyblok-js-client": "^2.5.2"
+  }
+}
